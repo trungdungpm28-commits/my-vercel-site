@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Chúc mừng Giáng Sinh 2025 | Thiệp Noel Online</title>
+
+    <meta name="description" content="Thiệp Giáng Sinh 2024 với lời chúc, quà tặng, hoạt động Noel, phong tục Giáng Sinh các nước, nhạc nền và hiệu ứng bông tuyết rơi." />
+    <meta name="keywords" content="Noel, Giáng Sinh 2024, thiệp Giáng Sinh, Christmas, lời chúc Noel, nhạc Giáng Sinh" />
+    
+    <meta property="og:title" content="Thiệp Giáng Sinh 2024" />
+    <meta property="og:description" content="Trang web thiệp Noel với nhạc nền, bông tuyết rơi và nhiều thông tin thú vị." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:image" content="https://example.com/images/cay-thong-noel.jpg" />
+
+    <!-- Structured data đơn giản (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Thiệp Giáng Sinh 2024",
+      "description": "Thiệp Noel online với nhạc nền, hình ảnh, video và thông tin về phong tục Giáng Sinh.",
+      "inLanguage": "vi-VN"
+    }
+    </script>
+
+    <style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: radial-gradient(circle at top, #2f9e44 0%, #0b3d1a 45%, #021308 100%);
+    color: #f8fafc;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+}
+
+.site-header {
+    text-align: center;
+    padding: 40px 16px 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.site-header h1 {
+    font-size: 2.8rem;
+    margin: 0 0 8px;
+    color: #ffffff;
+    text-shadow: 0 0 12px rgba(0, 0, 0, 0.35);
+}
+
+.subtitle {
+    max-width: 640px;
+    margin: 0 auto;
+    color: #e2f5e9;
+    font-size: 1rem;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 24px;
+}
+
+section,
+/* SECTION chung (các phần dưới) */
+section {
+    width: min(100% - 32px, 960px);
+    margin: 24px auto;
+    background: rgba(6, 44, 24, 0.94);
+    border-radius: 24px;
+    padding: 24px 20px 28px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(226, 252, 239, 0.12);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #ffe9a7;
+}
+
+/* KHUNG LỜI CHÚC + HỘP QUÀ (riêng) */
+.msg-gift {
+    width: min(100% - 32px, 960px);
+    margin: 24px auto;
+    background: rgba(6, 44, 24, 0.94);
+    border-radius: 24px;
+    padding: 10px 12px 14px;      /* SÁT HƠN NỮA, THÍCH THÌ GIẢM TIẾP */
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(226, 252, 239, 0.12);
+
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Tiêu đề trong khung lời chúc */
+.msg-gift h2 {
+    margin-bottom: 2px !important;
+}
+
+.msg-gift p {
+    margin-top: -25px !important;
+}
+
+
+section h2 {
+    margin-top: 0;
+    color: #ffe9a7;
+}
+
+/* HỘP QUÀ */
+
+.gift-wrap {
+    width: 100%;              /* bao hết chiều ngang section */
+    height: 200px;
+    margin: 20px auto 16px;   /* đẩy hộp quà xuống 20px so với mép trên */
+    position: relative;
+    background: linear-gradient(135deg, #ffb3b3, #ff8585); /* đỏ nhạt */
+    border-radius: 18px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.45);
+    transform-origin: center bottom;
+    transition:
+        transform 0.6s cubic-bezier(.16, .84, .44, 1),
+        opacity 0.6s ease,
+        height 0.6s ease,
+        margin-bottom 0.6s ease;
+}
+
+.gift-wrap::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -28px;
+    height: 40px;
+    border-radius: 18px 18px 10px 10px;
+    background: linear-gradient(135deg, #ffc2c2, #ff9b9b);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.4);
+}
+
+.ribbon {
+    position: absolute;
+    inset: 0;
+}
+
+.ribbon::before,
+.ribbon::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(#ffe9a7, #ffd54f);
+}
+
+.ribbon::before {
+    width: 26px;
+    top: -28px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ribbon::after {
+    height: 26px;
+    left: 0;
+    right: 0;
+    top: 32%;
+}
+
+.bow {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 40px;
+}
+
+.bow::before,
+.bow::after {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 28px;
+    border-radius: 50% 50% 50% 10%;
+    background: linear-gradient(#ffe9a7, #ffc94d);
+}
+
+.bow::before {
+    right: 50%;
+    transform: translateX(6px) rotate(-18deg);
+}
+
+.bow::after {
+    left: 50%;
+    transform: translateX(-6px) scaleX(-1) rotate(-18deg);
+}
+
+/* nhún nhẹ trước khi mở */
+@keyframes gift-idle {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-6px) scale(1.02); }
+}
+.msg-gift:not(.open) .gift-wrap {
+    animation: gift-idle 2.3s ease-in-out infinite;
+}
+
+/* nội dung lời chúc */
+.gift-content {
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(24px) scale(0.96);
+    overflow: hidden;
+    transition:
+        max-height 0.7s ease,
+        opacity 0.5s ease,
+        transform 0.7s cubic-bezier(.16, .84, .44, 1);
+}
+.video-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* canh giữa ngang */
+    margin-top: 16px;
+}
+
+.video-wrapper iframe {
+    border-radius: 18px; /* nếu bạn muốn bo góc giống video mp4 */
+    overflow: hidden;
+}
+.msg-gift h2 {
+    color: #ffe9a7;
+    margin-top: 0;
+}
+
+.msg-gift p {
+    color: #fefcf6;
+    line-height: 1.6;
+    white-space: pre-line;
+    margin-bottom: 0;
+}
+
+/* Khi mở: hộp bay nhẹ và thu nhỏ, nội dung tràn lên, không chừa khoảng trống */
+.msg-gift.open .gift-wrap {
+    transform: translateY(-20px) scale(0.8);
+    opacity: 0;
+    height: 0;
+    margin-bottom: 0;
+}
+
+.msg-gift.open .gift-content {
+    max-height: 2000px;
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    font-size: 0.95rem;
+}
+
+th,
+td {
+    border: 1px solid rgba(226, 252, 239, 0.25);
+    padding: 8px 10px;
+    text-align: left;
+}
+
+th {
+    background: rgba(22, 101, 52, 0.9);
+    color: #e2f5e9;
+}
+
+tbody tr:nth-child(even) {
+    background: rgba(6, 44, 24, 0.95);
+}
+
+.link-list a {
+    color: #ffe66d;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.link-list a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+/* HÌNH + VIDEO CĂN GIỮA */
+figure {
+    margin: 16px 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    border-radius: 18px;
+    display: block;
+    margin-inline: auto;
+}
+
+figcaption {
+    margin-top: 6px;
+    font-size: 0.9rem;
+    color: #e2f5e9;
+}
+
+.video-wrapper {
+    margin-top: 16px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.45);
+}
+
+.video-wrapper video {
+    width: 100%;
+    display: block;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 24px 12px 32px;
+    color: #cdebd8;
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 600px) {
+    .site-header h1 {
+        font-size: 2.1rem;
+    }
+    .gift-wrap {
+        height: 170px;
+    }
+}
+
+/* TUYẾT RƠI */
+.snowflake {
+    position: fixed;
+    top: -10px;
+    color: #ffffff;
+    font-size: 14px;
+    pointer-events: none;
+    z-index: 0;
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translate3d(0, -10px, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate3d(20px, 110vh, 0);
+        opacity: 0;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Nhạc nền: autoplay + loop, ẩn, không có nút -->
+    <!-- Lưu ý: một số trình duyệt có thể chặn tự phát âm thanh cho đến khi người dùng tương tác. -->
+    <iframe 
+    style="display:none;"
+    src="https://www.youtube.com/embed/C1itkpVcKIE?autoplay=1&mute=0"
+    allow="autoplay">
+    </iframe>
+
+    <script>
+        window.addEventListener('load', function () {
+            const audio = document.getElementById('bg-music');
+            audio.muted = false;     // bật tiếng
+            audio.play().catch(err => {
+                console.log("Autoplay bị chặn:", err);
+            });
+        });
+    </script>
+
+    <!-- Lớp chứa tuyết rơi -->
+    <div id="snow-container" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <h1>Chúc mừng Giáng Sinh 2025</h1>
+        <p class="subtitle">
+            Gửi đến bạn những lời chúc ấm áp, niềm vui và bình an trong mùa Noel.
+        </p>
+    </header>
+
+    <main>
+        <!-- 1. Định dạng văn bản -->
+        <div class="msg-gift" id="giftBox1">
+            <div class="gift-wrap">
+                <div class="ribbon"></div>
+                <div class="bow"></div>
+            </div>
+
+            <div class="gift-content">
+                <h2>Nói lời yêu thương</h2>
+                <p>
+                    Nguyện xin chúa Hài Đồng Giêsu luôn bên cạnh và bảo vệ cho bạn cùng những người thân trong gia đình. Chúc bạn một mùa Giáng Sinh an lành, có nhiều hồng ân và có những giây phút thật ý nghĩa, ấm áp nhất.
+Hòa cùng niềm hân hoan mừng Giáng Sinh, mình xin gửi đến tất cả những người bạn thân quý lời chúc tốt lành, viên mãn nhất. Chúc các bạn của mình sẽ có một đêm noel thật ấm áp, ngập tràn tình thương và phúc lộc của Thiên Chúa.
+Chúc bạn và toàn thể gia đình đón mừng ngày lễ Giáng sinh an khang, hạnh phúc và một năm mới dồi dào sức khỏe trong Đức Kitô và mẹ Maria.
+Thân chúc bạn của tôi cùng những thành viên trong gia đình một mùa Noel yên bình cùng năm mới dồi dào, hạnh phúc, tràn đầy hồng ân.
+Mừng Chúa Giáng Sinh, mừng nhân loại bớt khổ đau, mình chúc bạn luôn bình an trong tim, may mắn, hạnh phúc và có những giây phút vui Noel thật ý nghĩa.
+                </p>
+            </div>
+        </div>
+
+        <!-- 2. Danh sách: quà tặng & hoạt động Noel -->
+        <section aria-labelledby="qua-tang-hoat-dong">
+            <h2 id="qua-tang-hoat-dong">Gợi ý quà tặng & hoạt động Noel</h2>
+
+            <h3>Gợi ý quà tặng</h3>
+            <ul>
+                <li>Thiệp Giáng Sinh viết tay</li>
+                <li>Gấu bông hoặc đồ chơi dễ thương</li>
+                <li>Sách truyền cảm hứng cho năm mới</li>
+                <li>Đèn trang trí, vòng nguyệt quế mini</li>
+                <li>Hộp bánh quy, socola Giáng Sinh</li>
+            </ul>
+
+            <h3>Hoạt động thú vị</h3>
+            <ol>
+                <li>Trang trí cây thông Noel cùng gia đình.</li>
+                <li>Chụp ảnh check-in với đèn đường và cây thông lớn.</li>
+                <li>Dành thời gian làm từ thiện, tặng quà cho người khó khăn.</li>
+                <li>Xem phim Giáng Sinh và uống ca cao nóng.</li>
+                <li>Viết ra điều ước và mục tiêu cho năm mới 2025.</li>
+            </ol>
+        </section>
+
+        <!-- 3. Bảng: so sánh phong tục Noel ở các nước -->
+        <section aria-labelledby="bang-phong-tuc">
+            <h2 id="bang-phong-tuc">Phong tục Giáng Sinh ở một số quốc gia</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Quốc gia</th>
+                        <th>Thời điểm chính</th>
+                        <th>Phong tục nổi bật</th>
+                        <th>Món ăn đặc trưng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Việt Nam</td>
+                        <td>Đêm 24/12</td>
+                        <td>Đi nhà thờ, dạo phố ngắm hang đá, chụp hình.</td>
+                        <td>Gà nướng, bánh kem Noel, đồ nướng đường phố.</td>
+                    </tr>
+                    <tr>
+                        <td>Mỹ</td>
+                        <td>Đêm 24 và ngày 25/12</td>
+                        <td>Trang trí cây thông, treo tất, ông già Noel tặng quà cho trẻ em.</td>
+                        <td>Gà tây nướng, bánh bí ngô, bánh gừng.</td>
+                    </tr>
+                    <tr>
+                        <td>Anh</td>
+                        <td>Ngày 25/12 và Boxing Day 26/12</td>
+                        <td>Kéo kẹo Christmas cracker, hát thánh ca, trao thiệp.</td>
+                        <td>Roast turkey, pudding Giáng Sinh, mince pie.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 4. Liên kết: bài hát, phim Giáng Sinh -->
+        <section aria-labelledby="lien-ket-noel">
+            <h2 id="lien-ket-noel">Nhạc và phim Giáng Sinh gợi ý</h2>
+            <p>Xem thêm những nội dung sau để tận hưởng mùa Noel trọn vẹn hơn:</p>
+            <ul class="link-list">
+                <li>
+                    Nhạc: 
+                    <a href="https://www.youtube.com/watch?v=hbh3_K-HVuw&list=RDhbh3_K-HVuw&start_radio=1" target="_blank" rel="noopener">
+                        Nhạc Giáng Sinh Tiếng Anh Chill
+                    </a>
+                </li>
+                <li>
+                    Phim: 
+                    <a href="https://www.youtube.com/results?search_query=christmas+movie+full" target="_blank" rel="noopener">
+                        Những bộ phim Giáng Sinh kinh điển
+                    </a>
+                </li>
+                <li>
+                    Lời chúc:
+                    <a href="https://www.google.com/search?q=l%E1%BB%9Di+ch%C3%BAc+gi%C3%A1ng+sinh+hay" target="_blank" rel="noopener">
+                        Tổng hợp lời chúc Giáng Sinh hay
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 5. Chèn hình ảnh, âm thanh, video -->
+        <section aria-labelledby="media-noel">
+            <h2 id="media-noel">Hình ảnh & video Giáng Sinh</h2>
+
+            <!-- Hình ảnh cây thông -->
+            <figure style="text-align:center; margin:16px 0; ">
+                <img
+                    src="https://cdn.tgdd.vn//News/1489061//dung-den-led-trang-tri-cay-thong-noel-mang-lai-ve-dep-lung-linh-845x564.png"
+                    alt="Cây thông Noel trang trí đèn led lung linh"
+                    style="max-width:100%; border-radius:18px; display:block; margin:0 auto;"
+                >
+                <figcaption style="margin-top:6px; color:#e2f5e9; font-size:0.9rem;">
+                    Cây thông Noel trang trí đèn led lung linh.
+                </figcaption>
+            </figure>
+
+            <!-- Video tuyết rơi (demo) -->
+            <div class="video-wrapper" style="width:100%; display:flex; justify-content:center; margin-top:16px;">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/_7wUu39A3Og?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&playsinline=1&loop=1&playlist=_7wUu39A3Og"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    style="border-radius:18px; overflow:hidden;">
+                </iframe>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Thiệp Giáng Sinh Online. Chúc bạn một mùa Noel an lành!</p>
+    </footer>
+
+    <script>
+    // Tạo bông tuyết rơi nhẹ để không quá nặng trình duyệt
+const snowContainer = document.getElementById("snow-container");
+
+function createSnowflake() {
+    const snowflake = document.createElement("span");
+    snowflake.classList.add("snowflake");
+    snowflake.textContent = "❆";
+
+    const startLeft = Math.random() * 100; // %
+    const duration = 6 + Math.random() * 6; // 6–12s
+    const delay = Math.random() * 5;        // 0–5s
+
+    snowflake.style.left = startLeft + "vw";
+    snowflake.style.animationDuration = duration + "s";
+    snowflake.style.animationDelay = delay + "s";
+    snowflake.style.fontSize = 0.7 + Math.random() * 1.2 + "rem";
+
+    snowContainer.appendChild(snowflake);
+
+    // Xóa bông tuyết sau khi rơi xong
+    setTimeout(() => {
+        snowflake.remove();
+    }, (duration + delay) * 1000);
+}
+
+// Tạo tuyết liên tục
+setInterval(createSnowflake, 250);
+
+// Tùy chọn: cố gắng play nhạc sau khi người dùng tương tác (tăng tỉ lệ autoplay thành công)
+document.addEventListener("click", () => {
+    const audio = document.getElementById("bg-music");
+    if (audio && audio.paused) {
+        audio.play().catch(() => {});
+    }
+}, { once: true });
+document.getElementById("giftBox1").addEventListener("click", function () {
+    if (!this.classList.contains("open")) {
+        this.classList.add("open");
+    }
+});
+    </script>
+</body>
+</html>
